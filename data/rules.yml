@@ -1,0 +1,63 @@
+version: "3.1"
+
+rules:
+
+- rule: Say hello when greeted
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- rule: Say goodbye when the user says goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- rule: Affirm the user when they confirm
+  steps:
+    - intent: affirm
+    - action: utter_affirm
+
+- rule: Deny when the user declines
+  steps:
+    - intent: deny
+    - action: utter_deny
+
+- rule: Respond to IPC Section-related queries
+  steps:
+    - intent: ask_ipc_section
+    - action: utter_ipc_420
+
+- rule: Respond to law topics
+  steps:
+    - intent: ask_law_topic
+    - action: utter_law_topic
+
+- rule: Explain legal procedures
+  steps:
+    - intent: ask_procedure
+    - action: utter_procedure
+
+- rule: Discuss punishments
+  steps:
+    - intent: ask_punishment
+    - action: utter_punishment
+
+- rule: Assist with documents
+  steps:
+    - intent: ask_document
+    - action: utter_document
+
+- rule: Respond to bot challenges
+  steps:
+    - intent: bot_challenge
+    - action: utter_iamabot
+
+- rule: Respond to criminal law queries
+  steps:
+    - intent: ask_criminal_law
+    - action: utter_ask_criminal_law
+
+- rule: Respond to family law queries
+  steps:
+    - intent: ask_family_law
+    - action: utter_ask_family_law

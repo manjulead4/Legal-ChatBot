@@ -1,0 +1,63 @@
+version: "3.1"
+
+stories:
+
+- story: Greeting path
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- story: Goodbye path
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: Affirm path
+  steps:
+    - intent: affirm
+    - action: utter_affirm
+
+- story: Deny path
+  steps:
+    - intent: deny
+    - action: utter_deny
+
+- story: IPC Section Query path
+  steps:
+    - intent: ask_ipc_section
+    - action: utter_ipc_420
+
+- story: Law Topic path
+  steps:
+    - intent: ask_law_topic
+    - action: utter_law_topic
+
+- story: Procedure Explanation path
+  steps:
+    - intent: ask_procedure
+    - action: utter_procedure
+
+- story: Punishment Discussion path
+  steps:
+    - intent: ask_punishment
+    - action: utter_punishment
+
+- story: Document Assistance path
+  steps:
+    - intent: ask_document
+    - action: utter_document
+
+- story: Bot Challenge path
+  steps:
+    - intent: bot_challenge
+    - action: utter_iamabot
+
+- story: Criminal Law path
+  steps:
+    - intent: ask_criminal_law
+    - action: utter_ask_criminal_law
+
+- story: Family Law path
+  steps:
+    - intent: ask_family_law
+    - action: utter_ask_family_law

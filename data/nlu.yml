@@ -1,0 +1,114 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - good morning
+    - good evening
+    - hey there
+    - greetings
+    - hello, how can you help?
+
+- intent: goodbye
+  examples: |
+    - goodbye
+    - bye
+    - see you later
+    - thank you, bye
+    - good night
+    - see you next time
+    - take care
+
+- intent: affirm
+  examples: |
+    - yes
+    - that's right
+    - indeed
+    - absolutely
+    - correct
+    - sure
+
+- intent: deny
+  examples: |
+    - no
+    - I don't think so
+    - not really
+    - never
+
+- intent: ask_ipc_section
+  examples: |
+    - Explain IPC Section 420
+    - What does Section 302 of IPC say?
+    - Tell me about IPC 498A
+    - What is the punishment under IPC 420?
+    - What does the Indian Penal Code say about theft?
+    - Can you explain IPC Section 304?
+    - What is the fine for cheating under IPC?
+
+- intent: ask_law_topic
+  examples: |
+    - What is contract law?
+    - Can you explain family law?
+    - Tell me about criminal law
+    - What is civil law?
+    - Explain corporate law 
+    - What are the essentials of a valid contract?
+
+- intent: ask_procedure
+  examples: |
+    - What is the process for filing an FIR?
+    - How do I file a complaint in court?
+    - What are the steps to apply for bail?
+    - How can I register a property?
+    - What is the procedure for divorce?
+    - How do I initiate legal action for defamation?
+
+- intent: ask_punishment
+  examples: |
+    - What is the punishment for theft under IPC?
+    - How long is the imprisonment for murder?
+    - Is there a fine for breach of contract?
+    - What are the penalties for cybercrimes?
+
+- intent: ask_document
+  examples: |
+    - How do I draft a contract?
+    - Can you help me with a rental agreement?
+    - What should I include in a will?
+    - How to write a legal notice?
+    - Can you guide me on creating a partnership deed?
+
+- intent: bot_challenge
+  examples: |
+    - Are you a bot?
+    - Are you human?
+    - Am I speaking to an AI?
+    - Who created you?
+    - What are your capabilities?
+- intent: ask_contract_law
+  examples: |
+    - What is contract law?
+    - Can you explain contract law?
+
+- intent: ask_criminal_law
+  examples: |
+    - What is criminal law?
+    - Explain criminal law.
+
+- intent: ask_family_law
+  examples: |
+    - What is family law?
+    - Explain family law.
+
+- intent: mood_great
+  examples: |
+    - I am feeling great!
+    - I am happy today.
+
+- intent: mood_unhappy
+  examples: |
+    - I am not feeling good.
+    - I am sad today.
