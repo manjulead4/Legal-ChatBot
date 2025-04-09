@@ -1,0 +1,24 @@
+language: en
+
+pipeline:
+  - name: "WhitespaceTokenizer"
+  - name: "RegexFeaturizer"
+  - name: "CountVectorsFeaturizer"
+  - name: "DIETClassifier"
+    epochs: 100
+    evaluate_every_number_of_epochs: 10
+  - name: "ResponseSelector"
+    epochs: 50
+    evaluate_every_number_of_epochs: 10
+
+
+
+policies:
+  - name: "MemoizationPolicy"
+  - name: "RulePolicy"
+    core_fallback_threshold: 0.4
+    core_fallback_action_name: "action_default_fallback"
+  - name: "TEDPolicy"
+    max_history: 5
+
+assistant_id: 20250405-205943-chill-switch

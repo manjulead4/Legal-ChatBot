@@ -1,0 +1,72 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - ask_contract_law 
+  - ask_criminal_law
+  - ask_family_law
+  - ask_ipc_section
+  - bot_challenge
+  - mood_great
+  - mood_unhappy
+  - ask_punishment
+  - ask_document
+  - ask_law_topic
+  - ask_procedure
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you with legal queries today?"
+
+  utter_goodbye:
+    - text: "Goodbye! If you have more legal questions, feel free to come back!"
+
+  utter_ask_contract_law:
+    - text: "Contract law governs agreements between parties. Do you want to know about contracts, breaches, or termination?"
+
+  utter_ask_criminal_law:
+    - text: "Criminal law deals with offenses and legal penalties. Can you specify what you're looking for, like theft or bail procedures?"
+
+  utter_ipc_420:
+    - text: "Section 420 of the Indian Penal Code deals with cheating and dishonestly inducing delivery of property. It prescribes a punishment of imprisonment for up to seven years and a fine."
+
+  utter_iamabot:
+    - text: "I am a bot, here to assist you with legal queries!"
+
+  utter_happy:
+    - text: "I am glad to hear that!"
+
+  utter_cheer_up:
+    - text: "Here is something to cheer you up: [insert uplifting message]."
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_affirm:
+    - text: "Got it!"
+
+  utter_deny:
+    - text: "Alright, let me know if there's anything else."
+
+  utter_law_topic:
+    - text: "I can help you with legal topics like family law, criminal law, and contract law."
+
+  utter_procedure:
+    - text: "Legal procedures can vary; let me know what you want to discuss!"
+
+  utter_punishment:
+    - text: "Punishments vary depending on the crime. Can you specify what you'd like to learn?"
+
+  utter_document:
+    - text: "I can guide you on drafting legal documents such as contracts or agreements."
+
+  utter_ask_family_law:
+    - text: "Family law covers matters like divorce, adoption, and domestic issues."
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
